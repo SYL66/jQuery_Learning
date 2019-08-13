@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;margin:0;
+			}
+			li{
+				height:20px
+			}
+			ul{
+				display:inline-block;
+				list-style-type:none;
+				width:200px;
+			}
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("ul:not(#second) li:first").css("background-color","red");
+				$("ul:not(#second) li:nth-child(2)").css("background-color","orange");
+				$("ul:not(#second) li:nth-child(3)").css("background-color","yellow");
+				$("ul:not(#second) li:nth-child(4)").css("background-color","blue");
+				$("ul:not(#second) li:last").css("background-color","green");
+			})
+			
+			$(function(){
+				$("ul:not(#first) li:odd").css("background-color","red");
+				$("ul:not(#first) li:even").css("background-color","orange");
+			})
+		</script>
+		
+	</head>
+	<body>
+		<ul id="first">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+
+		<hr/>
+		<ul id="second">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>
