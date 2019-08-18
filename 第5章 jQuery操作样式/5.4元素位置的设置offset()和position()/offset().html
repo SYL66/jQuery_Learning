@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				text-align:center;
+			}
+			#main{
+				text-align:center;
+				margin:100px auto;
+				padding:15px;
+				boder:1px solid gray;
+				display:inline-block;
+			}
+			#box1,#box2{
+				display:inline-block;
+				width:100px;
+				height:100px;
+			}
+			#box1{
+				background-color:red;
+			}
+			#box2{
+				background-color:orange;
+			}
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					var top=$("#box2").offset().top;
+					var left=$("#box1").offset().left;
+					var str="box2与文档顶部的距离是"+top+"px"+"\n"+"box1与文档左部的距离是"+left+"px";
+					alert(str);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div id="box1">box1</div>  <br>
+			<div id="box2">box2	</div> <br>
+			<input type="button" id="btn" value="获取">
+		</div>
+	</body>
+</html>

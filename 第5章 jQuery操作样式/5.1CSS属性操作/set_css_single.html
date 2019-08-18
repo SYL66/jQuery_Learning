@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>设置单个CSS属性</title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					$("ul li:nth-child(odd)").css("color","green");
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>jQuery</li>
+			<li>ASP.NET</li>
+		</ul>
+		<input type="button" id="btn" value="设置">
+	</body>
+</html>

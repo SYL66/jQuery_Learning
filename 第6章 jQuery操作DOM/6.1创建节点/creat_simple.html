@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					var $li=$("<li></li>")
+					$("ul").append($li)
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<input type="button" id="btn" value="添加">
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#father{
+				position:relative;
+				width:200px;
+				height:200px;
+				background-color:orange;
+			}
+			#son{
+				position:absolute;
+				top:20px;
+				left:50px;
+				width:50px;
+				height:50px;
+				background-color:red;
+			}
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					var top=$("#son").position().top;
+					var left=$("#son").position().left;
+					var str="子元素相对父元素的顶部距离是："+top+"px"+"\n"+"子元素相对父元素的左部距离是："+left+"px"
+					alert(str)
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="father">
+			<div id="son"></div>
+		</div>
+		<br>
+		<input id="btn" type="button" value="获取"></input>
+	</body>
+</html>

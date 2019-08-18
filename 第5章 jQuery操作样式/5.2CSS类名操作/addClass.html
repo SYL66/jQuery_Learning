@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>添加类名</title>
+		<style type="text/css">
+			.myLi{
+				color:red;
+				background-color:#ADFF2F;
+				font-weight:bold;
+			}
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					$("ul li:nth-child(odd)").addClass("myLi");
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>jQuery</li>
+			<li>ASP.NET</li>
+		</ul>
+		<input type="button" id="btn" value="添加"/>
+	</body>
+</html>

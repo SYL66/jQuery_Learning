@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				height:1800px;
+			}
+			#box1,#box2{
+				display:inline-block;
+				width:100px;
+				height:100px;
+			}
+			#box1{
+				background-color:red;
+			}
+			#box2{
+				background-color:orange;
+				position:fixed;
+			}
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var top=$("#box2").offset().top;
+				$(window).scroll(function(){
+					if($(this).scrollTop()>top){
+						$("#box2").css({"position":"fixed","top":"0"});
+					}else{
+						$("#box2").css({"position":"relative"});
+					}
+				});
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div id="box1">box1</div>  <br>
+		<div id="box2">box2	</div> <br>	
+	</body>
+</html>

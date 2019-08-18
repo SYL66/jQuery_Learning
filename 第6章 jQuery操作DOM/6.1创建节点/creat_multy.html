@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					var $li=$("<li><a href='http://www.lvyestudy.com' target='_blank' title='欢迎来到绿叶学习网'>绿叶学习网</a></li>")
+					$("ul").append($li)
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li><a href="http://www.lvyestudy.com" target="_blank" title="欢迎来到绿叶学习网">绿叶学习网</a></li>
+			<li><a href="http://www.lvyestudy.com" target="_blank" title="欢迎来到绿叶学习网">绿叶学习网</a></li>
+			<li><a href="http://www.lvyestudy.com" target="_blank" title="欢迎来到绿叶学习网">绿叶学习网</a></li>
+		</ul>
+		<input type="button" id="btn" value="添加">
+	</body>
+</html>
