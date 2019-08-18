@@ -19,17 +19,13 @@
 		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
 		<script type="text/javascript">
 			$(function(){
-				$("ul:not(#second) li:first").css("background-color","red");
-				$("ul:not(#second) li:nth-child(2)").css("background-color","orange");
-				$("ul:not(#second) li:nth-child(3)").css("background-color","yellow");
-				$("ul:not(#second) li:nth-child(4)").css("background-color","blue");
-				$("ul:not(#second) li:last").css("background-color","green");
+				$("ul:not(#second) li:first-of-type").css("background-color","red");
+				$("ul:not(#second) li:nth-of-type(2)").css("background-color","orange");
+				$("ul:not(#second) li:nth-of-type(3)").css("background-color","yellow");
+				$("ul:not(#second) li:nth-of-type(4)").css("background-color","blue");
+				$("ul:not(#second) li:last-of-type").css("background-color","green");
 			})
 			
-			$(function(){
-				$("ul:not(#first) li:odd").css("background-color","red");
-				$("ul:not(#first) li:even").css("background-color","orange");
-			})
 		</script>
 		
 	</head>
