@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn_src").click(function(){
+					alert($("img").attr("src"))
+				})
+				$("#btn_alt").click(function(){
+					alert($("img").attr("alt"))
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<img src="img/站酷.png" alt="站酷Logo" /><br>
+		<input type="button" id="btn_src" value="获取src属性"/>
+		<input type="button" id="btn_alt" value="获取alt属性"/>
+	</body>
+</html>
