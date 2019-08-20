@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>删除节点内容empty</title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					$("ul li:eq(3)").empty();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>jQuery</li>
+			<li>Canvas</li>
+		</ul>
+		<input id="btn" type="button" value="empty删除">
+		<p>empty方法会将节点内部的内容删除，保留节点本身</p>
+	</body>
+</html>

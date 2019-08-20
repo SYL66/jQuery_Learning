@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>删除节点remove</title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					var $li=$("ul li:eq(3)").remove();
+					$("ul").append($li)
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>jQuery</li>
+			<li>Canvas</li>
+		</ul>
+		<input id="btn" type="button" value="remove删除与互换顺序">
+		<p>remove方法会将元素及与其绑定的事件一起删除</p>
+	</body>
+</html>

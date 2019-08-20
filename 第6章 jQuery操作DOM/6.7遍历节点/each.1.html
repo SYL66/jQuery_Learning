@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>遍历节点each</title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var arr=["HTML","CSS","JavaScript","jQuery","Canvas"];
+				$("#btn").click(function(){
+					$("li").each(function(index){
+						var txt=arr[index];
+						$(this).text(txt);
+					});
+				});
+				
+			})
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<input id="btn" type="button" value="添加内容">
+		
+		
+	</body>
+</html>

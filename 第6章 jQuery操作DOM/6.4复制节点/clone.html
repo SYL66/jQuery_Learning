@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>复制节点clone</title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("li").click(function(){
+					var $txt=$(this).text();
+					alert($txt);
+				});
+				$("#btn1").click(function(){
+					var $li=$("ul li:eq(3)").clone();
+					$("ul").append($li)
+				});
+				$("#btn2").click(function(){
+					var $li=$("ul li:eq(3)").clone(true);
+					$("ul").append($li)
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>jQuery</li>
+			<li>Canvas</li>
+		</ul>
+		<input id="btn1" type="button" value="复制节点clone">
+		<input id="btn2" type="button" value="复制节点clone(true)">
+		<p>clone(true)会将事件一起复制，而clone不回复制事件</p>
+	</body>
+</html>

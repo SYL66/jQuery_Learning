@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>内部插入节点prepend</title>
+		<style type="text/css">
+			p{
+				background-color:ghostwhite;
+			}
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					var $strong=$("<strong>jQuery入门教程</strong>");
+					$("p").prepend($strong);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<p>绿叶学习网</p>
+		<input type="button" id="btn" value="prepend插入">
+	</body>
+</html>

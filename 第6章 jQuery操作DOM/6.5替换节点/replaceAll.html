@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>替换节点replaceWith</title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					$("<a href='http://www.lvyestudy.com' targrt='_blank'>绿叶学习网</a>").replaceAll("strong")
+				});
+				
+			})
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li><strong>HTML</strong></li>
+			<li><strong>CSS</strong></li>
+			<li><strong>JavaScript</strong></li>
+			<li><strong>jQuery</strong></li>
+			<li><strong>Canvas</strong></li>
+		</ul>
+		<input id="btn" type="button" value="替换节点replaceWith">
+		<p>replaceWith会将事件取消</p>
+	</body>
+</html>
