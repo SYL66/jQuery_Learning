@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标移入与移出事件</title>
+		<style type="text/css">
+			*{padding:0;margin:0;}
+			#wrapper{
+				display:inline-block;
+				text-align:left;
+				width:300px;
+				border:1px solid silver;
+			}
+			h3{
+				text-align:center;
+				paddig:10px;
+				background-color:#f1f1f1;
+				border-bottom:1px solid gray;
+				letter-spacing:1.5px;
+			}
+			h3:hover{
+				background-color:#e1e1e1;
+				cursor:pointer;
+			}
+			p{
+				text-indent: 2em;
+				line-height:1.5em;
+				letter-spacing:2px;
+				padding:8px;
+				display:none;
+			}
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("h3").click(function(){
+					$("p").slideToggle(1000);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h3>绿叶学习网简介</h3>
+			<p>绿叶学习网成立于2015年4月1日，是一个最富有活力的Web技术学习网站。在这里，我们只提供互联网最好的Web技术教程和最佳的学习体验。每一个教程、每一篇文章、甚至每一个知识点，都凝聚了本人的最辛勤的汗水。多少日日夜夜，本人呕心沥血在一遍一遍地编辑，为的是给广大网站爱好者提供最精华的知识。</p>
+		</div>
+	</body>
+</html>

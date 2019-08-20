@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src='../../jQuery/jquery-3.4.1.js'></script>
+		<script type="text/javascript">
+			
+			$(function(){
+				//为已存在的元素绑定事件
+				$("#btn").on("click",function(){
+					alert("绿叶学习网jQuery入门教程")
+				})
+				//为未来创建的元素绑定事件
+				var $btn=$("<input type='button' id='button' value='未来创建的按钮'/>")
+				$($btn).appendTo("body");
+				$("#button").on("click",function(){
+					alert("为未来创建的元素绑定的事件")
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input id="btn" type="button" value="按钮"/>
+		<br>
+		<br>
+	</body>
+</html>

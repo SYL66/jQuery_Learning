@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{padding:0;margin:0;}
+			div{
+				text-align:center;
+				display:iline-block;
+				width:200px;
+				padding:20px;
+				margin:10px;
+				background-color:#f1f1f1;
+			}
+			span{
+				color:deepskyblue;
+			}
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			var x=0,y=0;
+			$(function(){
+				$(".over").mouseover(function(){
+					$(".over span").text(x+=1);
+				});
+				$(".enter").mouseenter(function(){
+					$(".enter span").text(y+=1);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="over">
+			<p>mouseover触发个数：<span></span></p>
+		</div>	
+		<div class="enter">
+			<p>mouseenter触发个数：<span></span></p>
+		</div>
+	</body>
+</html>

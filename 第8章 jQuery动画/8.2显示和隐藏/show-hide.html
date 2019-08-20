@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btnShow").click(function(){
+					$("img").show();
+				})
+				$("#btnHide").click(function(){
+					$("img").hide();
+				})
+				$("#btnShowLate").click(function(){
+					$("img").show(500);
+				})
+				$("#btnHideLate").click(function(){
+					$("img").hide(500);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<img src="../站酷.png" alt=""> <br>
+		<input type="button" id="btnShow" value="显示"/>
+		<input type="button" id="btnHide" value="隐藏"/>
+		<input type="button" id="btnShowLate" value="延时显示"/>
+		<input type="button" id="btnHideLate" value="延时隐藏"/>
+	</body>
+</html>

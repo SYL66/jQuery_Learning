@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标单击事件</title>
+		<style type="text/css">
+			#btn{
+				display:inline-block;
+				width:150px;
+				height:30px;
+				line-height:30px;
+				text-align:center;
+				letter-spacing:2px;
+				color:white;
+				background-color:orange;
+				font-weight:bold;
+				border-radius:5px;
+				cursor:pointer;
+			}
+			#btn:hover{
+				background-color:skyblue;
+			}
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").one("click",function(){
+					alert("只弹出一次！");
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div id="btn">提交表单</div>
+	</body>
+</html>

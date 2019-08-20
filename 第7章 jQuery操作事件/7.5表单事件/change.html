@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#num{
+				display:inline-block;
+				color:deepskyblue;
+				margin-top:10px;
+				}
+			#txt{font-size:1.5em;}
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#txt").change(function(){
+					var len=$(this).val().length;
+					$("#num").text(len)
+					});
+			})
+		</script>
+	</head>
+	<body>
+		<textarea id="txt" cols="30" rows="5"></textarea>
+		<br>
+		输入的字符长度为：<span id="num">0</span>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("ul li").filter(function(){
+					return $("span",this).length==1;
+				}).click(function(){
+					$(this).css("color","red");
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>红色red</li>
+			<li><span>橙色orange</span></li>
+			<li><span><span>黄色yellow</span></span></li>
+			<li>绿色green</li>
+			<li>蓝色blue</li>
+			<li>紫色purple</li>
+		</ul>
+	</body>
+</html>

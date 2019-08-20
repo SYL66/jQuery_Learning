@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				 $("#btn").click(function () {
+					var parents = $("span").parents()
+						.map(function () { return this.tagName; })
+						.get().join(",");
+					alert("span元素的所有祖先元素为：" + parents.toLowerCase());
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div>
+			<p>
+				<strong>
+					<span>jQuery入门教程</span>
+				</strong>
+			</p>
+		</div>
+		<input id="btn" type="button" value="获取" />
+	</body>
+</html>

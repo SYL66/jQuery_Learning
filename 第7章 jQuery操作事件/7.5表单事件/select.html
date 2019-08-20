@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.txt{
+				padding:10px;
+				margin-bottom:5px;
+				font-size:1.5em;
+				line-height:1.5em;
+				text-align:left;
+				text-indent: 2em;
+				letter-spacing:1px;
+			}
+			#txt1{text-indent:0}
+			
+		</style>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#txt1").select(function(){
+					alert("你选中了单行文本框中的内容")
+					});
+				$("#txt2").select(function(){
+					alert("你选中了多行文本框中的内容")
+					});
+			})
+		</script>
+	</head>
+	<body>
+		<input type="text" class="txt" id="txt1" value="欢迎来到绿叶学习网学习jQuery入门教程">
+		<textarea id="txt2" class="txt" cols="35" rows="3">欢迎来到绿叶学习网学习jQuery入门教程</textarea>
+		
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>累加动画</title>
+		<style type="text/css">
+			#lvye{
+				display:inline-block;
+				width:30px;
+				height:30px;
+				border:1px solid orange;
+				background-color:#ffe7b7;
+			}
+		</style>
+		<script type="text/javascript" src="../../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript" src="../../../jQuery/jquery.color.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#lvye").click(function(){
+					$(this).animate(
+					{"width":"100px","height":"100px","background-color":"red"},
+					1000,
+					function(){
+						$(this).css("border","3px solid green");
+						}
+						);
+					})
+				})
+		</script>
+	</head>
+	<body>
+		<div id="lvye"></div>
+	</body>
+</html>

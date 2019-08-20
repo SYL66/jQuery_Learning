@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../../jQuery/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				 $(".wrapper").hover(function(){
+					 $(this).find(".test").css("color","red")
+				 },function(){
+					 $(this).find(".test").css("color","black")
+				 })
+			})
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="test">子元素</div>
+			<ul>
+				<li>孙元素</li>
+				<li class="test">孙元素</li>
+				<li>孙元素</li>
+			</ul>
+		</div>
+		<div class="wrapper">
+			<div class="test">子元素</div>
+			<ul>
+				<li>孙元素</li>
+				<li class="test">孙元素</li>
+				<li>孙元素</li>
+			</ul>
+		</div>
+	</body>
+</html>
